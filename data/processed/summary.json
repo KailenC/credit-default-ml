@@ -1,6 +1,6 @@
 {
   "seed": 42,
-  "source": "C:\\Users\\David\\Downloads\\05_credit_card_default_train.csv",
+  "source": "05_credit_card_default_train.csv",
   "splits": {
     "train": {
       "rows": 3497,

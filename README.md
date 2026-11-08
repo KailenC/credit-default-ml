@@ -32,7 +32,7 @@ From the repository folder, with the virtual environment activated:
 
 ```powershell
 python -m pip install -r requirements-preprocess.txt
-python -m src.preprocess --input "C:\Users\David\Downloads\05_credit_card_default_train.csv"
+python -m src.preprocess --input data/train.csv
 ```
 
 Outputs go to `data/processed/` (shared in Git for model development): transformed `X_train`,
@@ -58,12 +58,13 @@ the test split untouched until final evaluation. No class balancing is applied.
 
 ## Use the shared data for modeling
 
-The processed splits are included on `david/branch1`. To bring them into your
+The processed splits are included on the preprocessing branch. Replace
+`<preprocessing-branch>` below with its branch name. To bring them into your
 own working branch, commit or stash local changes, then run:
 
 ```powershell
 git fetch origin
-git merge origin/david/branch1
+git merge origin/<preprocessing-branch>
 ```
 
 From a notebook in `notebooks/`, load features and labels with:

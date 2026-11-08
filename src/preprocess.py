@@ -1,4 +1,4 @@
-﻿"""Leakage-safe preprocessing. Run: python -m src.preprocess --input path/to/train.csv."""
+"""Leakage-safe preprocessing. Run: python -m src.preprocess --input path/to/train.csv."""
 import argparse
 import json
 from pathlib import Path
@@ -70,7 +70,7 @@ def preprocess(path=DATA_PATH, output_dir=ROOT / 'data' / 'processed', seed=SEED
     transformer.fit(splits[0])
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    summary = {'seed': seed, 'source': str(path), 'splits': {}}
+    summary = {'seed': seed, 'source': Path(path).name, 'splits': {}}
     for name, X, y in zip(('train', 'val', 'test'), splits[:3], splits[3:]):
         transformed = pd.DataFrame(
             transformer.transform(X), index=X.index,
