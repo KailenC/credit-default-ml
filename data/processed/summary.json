@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "source": "C:\\Users\\David\\Downloads\\05_credit_card_default_train.csv",
+  "splits": {
+    "train": {
+      "rows": 3497,
+      "features": 33,
+      "default_rate": 0.22133257077494994
+    },
+    "val": {
+      "rows": 750,
+      "features": 33,
+      "default_rate": 0.22133333333333333
+    },
+    "test": {
+      "rows": 750,
+      "features": 33,
+      "default_rate": 0.22133333333333333
+    }
+  }
+}
