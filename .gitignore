@@ -226,6 +226,5 @@ data/processed/*
 !data/processed/*.csv
 !data/processed/summary.json
 !data/processed/preprocessor.joblib
-outputs/*.csv
 .ipynb_checkpoints/
 .DS_Store
