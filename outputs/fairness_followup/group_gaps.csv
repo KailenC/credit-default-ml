@@ -1,0 +1,16 @@
+attribute,eligible_groups,excluded_groups,fpr_gap,fnr_gap,candidate
+age_band,4,1,0.09565528338995172,0.20535714285714285,baseline_train_threshold
+education,3,4,0.037388163834851856,0.23742227247032222,baseline_train_threshold
+marriage,2,2,0.03262247271205837,0.039215686274509776,baseline_train_threshold
+sex,2,0,0.021791976702575294,0.08885017421602787,baseline_train_threshold
+sex_age,6,4,0.15343035343035344,0.33730158730158727,baseline_train_threshold
+age_band,4,1,0.09789021991775432,0.2232142857142857,reweighted_fixed_baseline_threshold
+education,3,4,0.02855874519088486,0.253815715093273,reweighted_fixed_baseline_threshold
+marriage,2,2,0.02350393167862372,0.04037763253449528,reweighted_fixed_baseline_threshold
+sex,2,0,0.022988931255321504,0.11236933797909404,reweighted_fixed_baseline_threshold
+sex_age,6,4,0.1553014553014553,0.33730158730158727,reweighted_fixed_baseline_threshold
+age_band,4,1,0.09257107098158412,0.2232142857142857,reweighted_train_threshold
+education,3,4,0.02030954548637859,0.253815715093273,reweighted_train_threshold
+marriage,2,2,0.020464418000812168,0.04037763253449528,reweighted_train_threshold
+sex,2,0,0.025790051703500794,0.11236933797909404,reweighted_train_threshold
+sex_age,6,4,0.1553014553014553,0.33730158730158727,reweighted_train_threshold

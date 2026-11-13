@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "test_used": false,
+  "baseline": "random_forest_without_demographics",
+  "baseline_threshold": 0.4833645477624719,
+  "reweighted_oof_threshold": 0.48693460690893614,
+  "weighting": "Fold-local Laplace-smoothed age/label independence weights, clipped [0.5,2], normalized; balanced class_weight retained",
+  "scope": "Exploratory validation follow-up, not full FAIRNESS_POLICY acceptance evaluation",
+  "uncertainty": {
+    "repetitions": 2000,
+    "invalid_replicates": 0,
+    "change_worst_gap_interval": [
+      -0.02195300751879695,
+      0.11764705882352944
+    ],
+    "note": "Marginal paired percentile interval; validation selection is not accounted for."
+  }
+}
