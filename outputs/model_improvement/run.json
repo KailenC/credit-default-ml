@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "selection": "training 3-fold average precision",
+  "threshold_rule": "train OOF: minimum FPR with recall >= .60 and FPR <= .25; fallback .5",
+  "test_used": false,
+  "candidates": {
+    "random_forest_all_features": {
+      "params": {
+        "model__class_weight": null,
+        "model__min_samples_leaf": 10
+      },
+      "cv_ap": 0.4968704410789302,
+      "oof_threshold": 0.24770252008104254
+    },
+    "random_forest_without_demographics": {
+      "params": {
+        "model__class_weight": "balanced",
+        "model__min_samples_leaf": 10
+      },
+      "cv_ap": 0.49782109643123723,
+      "oof_threshold": 0.4833645477624719
+    },
+    "hist_gradient_boosting_all_features": {
+      "params": {
+        "model__l2_regularization": 10.0,
+        "model__max_leaf_nodes": 7
+      },
+      "cv_ap": 0.4957118837348144,
+      "oof_threshold": 0.2361726363784943
+    },
+    "hist_gradient_boosting_without_demographics": {
+      "params": {
+        "model__l2_regularization": 10.0,
+        "model__max_leaf_nodes": 7
+      },
+      "cv_ap": 0.49632840626977165,
+      "oof_threshold": 0.2389963915111803
+    }
+  }
+}

@@ -226,5 +226,7 @@ data/processed/*
 !data/processed/*.csv
 !data/processed/summary.json
 !data/processed/preprocessor.joblib
+outputs/model_improvement/*.joblib
+outputs/fairness_followup/*.joblib
 .ipynb_checkpoints/
 .DS_Store
